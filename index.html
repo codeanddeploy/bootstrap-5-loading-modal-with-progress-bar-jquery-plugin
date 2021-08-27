@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  	<title>Bootstrap 5 Waitingfor Loading Modal with Progress bar jQuery Plugin</title>
+
+  	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+  
+<body>
+   
+   	<br/><br/><br/>
+	<div class="container">
+		<h3>Simple dialog</h3>
+        <pre>waitingDialog.show();</pre>
+
+        <button type="button" class="btn btn-primary" id="simple-dialog">Show dialog</button>
+
+        <br/><br/>
+
+        <h3>Dialog with custom message</h3>
+        <pre>waitingDialog.show('Custom message');</pre>
+        <button type="button" class="btn btn-success" id="dialog-custom-message">Show dialog</button>
+        
+        <br/><br/>
+
+        <h3>Dialog with custom settings</h3>
+        <pre>waitingDialog.show('Custom message', {dialogSize: 'sm', progressType: 'warning'});</pre>
+        <button type="button" class="btn btn-warning" id="dialog-custom-settings">Show dialog</button>
+        
+        <br/><br/>
+        
+        <h3>Dialog with some callback firing after it was hidden</h3>
+        <pre>waitingDialog.show('Dialog with callback on hidden',{onHide: function () {alert('Callback!');}});</pre>
+        <button type="button" class="btn btn-danger" id="dialog-custom-callback">Show dialog</button>
+	</div>
+
+
+	<!-- Must put our javascript files here to fast the page loading -->
+	
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- Bootstrap JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<!-- Bootstrap Waiting For Script -->
+	<script src="assets/plugins/bootstrap-waitingfor/bootstrap-waitingfor.min.js"></script>
+
+	<!-- Page Script -->
+	<script src="assets/js/scripts.js"></script>
+
+</body>
+  
+</html>
